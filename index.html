@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Pixels art</title>
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <h1 id="title">Paleta de Cores</h1>
+      <h1 id="title">Paleta de Cores</h1>
     </header>
-    <main>
-        <section id="color-palette">
-            <button class="color selected" id="bt1" style="background-color: black;"></button>
-            <button class="color" id="bt2" style="background-color: red ;"></button>
-            <button class="color" id="bt3" style="background-color: blue;"></button>
-            <button class="color" id="bt4" style="background-color: green;"></button>
-        </section>
 
-        <section>
-            <button id="clear-board">Limpar</button>
-            <input type="number" name="" id="board-size" min="1" max="50">
-            <button id="generate-board">VQV</button>
-        </section>
+    <section id="color-palette">
+      <div class="color" id="bt1"></div>
+      <div class="color" id="bt2"></div>
+      <div class="color" id="bt3"></div>
+      <div class="color" id="bt4"></div>
+    </section>
 
-        <section id="pixel-board"></section>
+    <section>
+      <button id="clear-board">Limpar</button>
+      <input type="number" min="1" max="50" id="board-size">
+      <button id="generate-board">VQV</button>
+    </section>
 
-    </main>
+    <section id="pixel-board"></section>
+
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
